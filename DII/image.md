@@ -39,4 +39,13 @@ COPY ./hello.py .
 ```
 
 
+---
+#### ENTRYPOINT (its alwys execute)
+
+Syntax
+```
+ENTRYPOINT [ "python", "hello.py" ]
+```
+
+
 
