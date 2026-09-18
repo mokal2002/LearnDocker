@@ -47,8 +47,35 @@ Syntax
 ENTRYPOINT [ "python", "hello.py" ]
 ```
 
-
-Spring boot jar file
-
+### using maven
 
 
+
+---
+## Docker images using maven 
+
+to create image
+```
+.\mvnw.cmd clean install spring-boot:build-image
+```
+
+
+
+# Pushing our first image to Docker Hub
+Step 1 : create account on docker hub \
+step 2 : loging docker hub using CLI
+```
+docker login
+```
+
+after its syas to enter and authenticate 
+
+Step 3 : tag the image
+```
+docker tag  <imagename>:<version> <username>/<imagename>
+```
+
+Step 4 : Push the image 
+```
+docker push aniketmokal29/dockerdemo
+```
